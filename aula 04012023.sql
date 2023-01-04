@@ -12,8 +12,14 @@ select nome from funcionarios where setor = 1;
 select nome, salario from funcionarios order by nome;
 
 -- e) Listagem dos nomes e dos salários por ordem de nome em formato descendente (z-a)
+select nome, salario from funcionarios order by nome DESC;
+
 -- f) Listagem dos setores e nomes colocados por ordem do campo setor em formato ascendente e do campo nome em formato descendente.
+select setor, nome from funcionarios order by setor, nome DESC;
+
 -- g) Listagem de nomes ordenados pelo campo nome em formato ascendente, dos empregados do setor 4.
+select nome from funcionarios where setor = 4 order by nome;
+
 -- h) Listar empregados com salário entre 1700.00 e 2000.00
 -- i) Listar empregados cujo nome comece com a letra A
 -- j) Listar empregados cujo nome tem a segunda letra A
